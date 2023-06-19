@@ -1,3 +1,17 @@
+body{
+    background: rgb(53, 53, 53);
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-around;
+    margin-top: 15vh;
+    width: 65vw;
+}
+.player1{
+    background: rgba(255, 0, 0, 0.599);
+}
+.player2{
+    background: rgba(0, 0, 255, 0.556);
+}
 .boxes{
     border: 2px solid black;
     display: flex;
@@ -10,6 +24,26 @@
     grid-template-columns: repeat(3, 10vw);
     grid-template-rows: repeat(3, 10vw);
     /* border: 2px solid white; */
+}
+.gameInfo{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+#info{
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+}
+#reset{
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 5px 25px;
+    border-radius: 10px;
+}
+.g{
+    display: flex;
+
 }
 
 .bl-0{
