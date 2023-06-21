@@ -24,11 +24,13 @@ body{
     /* background: rgba(255, 0, 0, 0.501); */
     background: rgb(164, 54, 54);
     border-radius: 20px;
+    color:rgb(255, 220, 220); 
     padding: 1.4vw;
 }
 .player2{
     /* background: rgb(3, 3, 127); */
     background: rgb(59, 59, 187);
+    color: rgb(214, 214, 251);
     border-radius: 20px;
     padding: 1.4vw;
 }
