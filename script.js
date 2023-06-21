@@ -7,7 +7,7 @@ let reset = document.getElementById("reset");
 console.log("baap " + gameover);
 let red =  0;
 let blue =  0;
-// document.body.style.backgroundColor = "blue";
+document.body.style.backgroundColor = "rgb(171, 2, 2, 0.495)";
 
 
 // +++++++++++++++++++++++ functon to change turn+++++++++++++++++++++++
@@ -18,9 +18,9 @@ const changeTurn = () => {
 const checkWin = () => {
     if ((boxes[0].innerText === boxes[1].innerText) && (boxes[1].innerText === boxes[2].innerText) && (boxes[0].innerText !== "")) {
         document.getElementById("info").innerText = boxes[1].innerText + " won";
-        boxes[0].style.backgroundColor = "red";
-        boxes[1].style.backgroundColor = "red";
-        boxes[2].style.backgroundColor = "red";
+        boxes[0].style.backgroundColor = "#eeaae5";
+        boxes[1].style.backgroundColor = "#eeaae5";
+        boxes[2].style.backgroundColor = "#eeaae5";
         if (boxes[0].innerText === "X") {
             red = red + 1;
         }else {
@@ -30,9 +30,9 @@ const checkWin = () => {
     }
     else if ((boxes[3].innerText === boxes[4].innerText) && (boxes[4].innerText === boxes[5].innerText) && (boxes[3].innerText !== "")) {
         document.getElementById("info").innerText = boxes[3].innerText + " won";
-        boxes[3].style.backgroundColor = "red";
-        boxes[4].style.backgroundColor = "red";
-        boxes[5].style.backgroundColor = "red";
+        boxes[3].style.backgroundColor = "#eeaae5";
+        boxes[4].style.backgroundColor = "#eeaae5";
+        boxes[5].style.backgroundColor = "#eeaae5";
         gameover = 1;
         if (boxes[3].innerText === "X") {
             red = red + 1;
@@ -42,9 +42,9 @@ const checkWin = () => {
     }
     else if ((boxes[6].innerText === boxes[7].innerText) && (boxes[7].innerText === boxes[8].innerText) && (boxes[6].innerText !== "")) {
         document.getElementById("info").innerText = boxes[6].innerText + " won";
-        boxes[6].style.backgroundColor = "red";
-        boxes[7].style.backgroundColor = "red";
-        boxes[8].style.backgroundColor = "red";
+        boxes[6].style.backgroundColor = "#eeaae5";
+        boxes[7].style.backgroundColor = "#eeaae5";
+        boxes[8].style.backgroundColor = "#eeaae5";
         gameover = 1;
         if (boxes[6].innerText === "X") {
             red = red + 1;
@@ -54,9 +54,9 @@ const checkWin = () => {
     }
     else if ((boxes[0].innerText === boxes[3].innerText) && (boxes[3].innerText === boxes[6].innerText) && (boxes[0].innerText !== "")) {
         document.getElementById("info").innerText = boxes[0].innerText + " won";
-        boxes[0].style.backgroundColor = "red";
-        boxes[3].style.backgroundColor = "red";
-        boxes[6].style.backgroundColor = "red";
+        boxes[0].style.backgroundColor = "#eeaae5";
+        boxes[3].style.backgroundColor = "#eeaae5";
+        boxes[6].style.backgroundColor = "#eeaae5";
         gameover = 1;
         if (boxes[0].innerText === "X") {
             red = red + 1;
@@ -66,9 +66,9 @@ const checkWin = () => {
     }
     else if ((boxes[1].innerText === boxes[4].innerText) && (boxes[4].innerText === boxes[7].innerText) && (boxes[1].innerText !== "")) {
         document.getElementById("info").innerText = boxes[1].innerText + " won";
-        boxes[1].style.backgroundColor = "red";
-        boxes[4].style.backgroundColor = "red";
-        boxes[7].style.backgroundColor = "red";
+        boxes[1].style.backgroundColor = "#eeaae5";
+        boxes[4].style.backgroundColor = "#eeaae5";
+        boxes[7].style.backgroundColor = "#eeaae5";
         gameover = 1;
         if (boxes[1].innerText === "X") {
             red = red + 1;
@@ -78,9 +78,9 @@ const checkWin = () => {
     }
     else if ((boxes[2].innerText === boxes[5].innerText) && (boxes[5].innerText === boxes[8].innerText) && (boxes[2].innerText !== "")) {
         document.getElementById("info").innerText = boxes[2].innerText + " won";
-        boxes[5].style.backgroundColor = "red";
-        boxes[8].style.backgroundColor = "red";
-        boxes[2].style.backgroundColor = "red";
+        boxes[5].style.backgroundColor = "#eeaae5";
+        boxes[8].style.backgroundColor = "#eeaae5";
+        boxes[2].style.backgroundColor = "#eeaae5";
         gameover = 1;
         if (boxes[2].innerText === "X") {
             red = red + 1;
@@ -90,9 +90,9 @@ const checkWin = () => {
     }
     else if ((boxes[0].innerText === boxes[4].innerText) && (boxes[4].innerText === boxes[8].innerText) && (boxes[0].innerText !== "")) {
         document.getElementById("info").innerText = boxes[0].innerText + " won";
-        boxes[0].style.backgroundColor = "red";
-        boxes[4].style.backgroundColor = "red";
-        boxes[8].style.backgroundColor = "red";
+        boxes[0].style.backgroundColor = "#eeaae5";
+        boxes[4].style.backgroundColor = "#eeaae5";
+        boxes[8].style.backgroundColor = "#eeaae5";
         gameover = 1;
         if (boxes[0].innerText === "X") {
             red = red + 1;
@@ -102,9 +102,9 @@ const checkWin = () => {
     }
     else if ((boxes[2].innerText === boxes[4].innerText) && (boxes[4].innerText === boxes[6].innerText) && (boxes[2].innerText !== "")) {
         document.getElementById("info").innerText = boxes[2].innerText + " won";
-        boxes[4].style.backgroundColor = "red";
-        boxes[6].style.backgroundColor = "red";
-        boxes[2].style.backgroundColor = "red";
+        boxes[4].style.backgroundColor = "#eeaae5";
+        boxes[6].style.backgroundColor = "#eeaae5";
+        boxes[2].style.backgroundColor = "#eeaae5";
         gameover = 1;
         if (boxes[2].innerText === "X") {
             red = red + 1;
@@ -125,9 +125,11 @@ Array.from(boxes).forEach(element => {
                 turn = changeTurn();
                 document.getElementById("info").innerText = "Turn for " + turn;
                 if (turn === "X") {
-                    // document.body.style.backgroundColor = "blue";
+                    document.body.style.backgroundColor = "rgb(171, 2, 2, 0.495)";
                 } else if (turn === "0") {
                     // document.body.style.backgroundColor = "pink";
+                    document.body.style.backgroundColor = "rgb(6, 6, 176, 0.495)";
+
                 }
                 checkWin();
                 // console.log("main " + gameover);
@@ -148,5 +150,5 @@ reset.addEventListener("click", () => {
     document.getElementById("pscore1").innerText = red;
     document.getElementById("pscore2").innerText = blue;
     // console.log("blue = " +blue);
-    // console.log("red = " +red);
+    // console.log("#eeaae5 = " +red);
 })
